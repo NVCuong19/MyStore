@@ -1,0 +1,16 @@
+.header {
+  background: #33B5E5;
+  text-align: center;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.h2 {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+

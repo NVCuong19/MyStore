@@ -1,0 +1,34 @@
+.image-box {
+  padding: 15px;
+  border: 1px solid #1ba4fa;
+  margin-bottom: 10px;
+}
+
+.image-box a {
+  display: block;
+  height: 400px;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.product-item .name, .product-item .price {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.add-product-form {
+  width: 150px;
+  margin: auto;
+}
+
+select {
+  margin-bottom: 8px;
+}
+
+select, button {
+  width: 100%;
+}

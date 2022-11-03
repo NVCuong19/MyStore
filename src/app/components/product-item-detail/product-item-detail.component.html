@@ -1,0 +1,26 @@
+<div class="product-detail-item">
+  <div class="pdi__image-box">
+    <img src="{{product.url}}" alt="">
+  </div>
+  <div class="pdi__info">
+    <h3>{{product.name}}</h3>
+    <p class="price">${{product.price}}</p>
+    <p class="description">{{ product.description }}</p>
+    <form (ngSubmit)="onSubmit($event)" class="add-product-form mb-2">
+      <select class="form-select">
+        <option
+        *ngFor="let qOption of quantityOptions"
+        [selected]="qOption == 1" >
+          {{qOption}}
+        </option>
+      </select>
+      <button type="submit" class="btn btn-primary">Add to cart</button>
+    </form>
+    <a routerLink="/" class="about-turn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+      </svg>
+      Back to product list
+    </a>
+  </div>
+</div>
